@@ -107,4 +107,86 @@ h1 {
 .assistant-message {
     background: #f5f5f5;
     margin-right: 20%;
+}
+
+/* 添加状态栏样式 */
+.status-bar {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.status-item {
+    margin-bottom: 10px;
+}
+
+.status-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.status-value {
+    margin-left: 10px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.status-value.connected {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-value.disconnected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.status-value.testing {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 10px;
+    padding: 10px;
+    background: #f8d7da;
+    border-radius: 4px;
+    display: none;
+}
+
+.test-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.test-button:hover {
+    background: #218838;
+}
+
+/* 添加加载动画 */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #3498db;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 } 

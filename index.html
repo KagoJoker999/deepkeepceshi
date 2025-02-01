@@ -10,9 +10,22 @@
     <div class="container">
         <h1>DeepSeek推理模型测试</h1>
         
+        <div class="status-bar">
+            <div class="status-item">
+                <span class="status-label">API状态：</span>
+                <span id="apiStatus" class="status-value">未连接</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">模型状态：</span>
+                <span id="modelStatus" class="status-value">未测试</span>
+            </div>
+            <div id="errorMessage" class="error-message"></div>
+        </div>
+
         <div class="api-key-section">
             <input type="password" id="apiKey" placeholder="请输入您的DeepSeek API Key">
             <small style="color: #666;">API Key仅保存在本地，不会上传到服务器</small>
+            <button id="testConnection" class="test-button">测试连接</button>
         </div>
 
         <div class="chat-container">
