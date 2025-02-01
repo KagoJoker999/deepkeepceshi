@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek推理模型测试</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DeepSeek推理模型测试</h1>
+        
+        <div class="api-key-section">
+            <input type="password" id="apiKey" placeholder="请输入您的DeepSeek API Key">
+            <small style="color: #666;">API Key仅保存在本地，不会上传到服务器</small>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages"></div>
+            
+            <div class="input-area">
+                <textarea id="userInput" placeholder="请输入您的问题..."></textarea>
+                <button id="sendButton">发送</button>
+            </div>
+        </div>
+
+        <div class="reasoning-section">
+            <h3>推理过程：</h3>
+            <div id="reasoningContent" class="reasoning-content"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
